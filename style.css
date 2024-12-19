@@ -1,0 +1,508 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(45, 39, 38, 1);
+}
+
+.navbar{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.5px solid rgba(230, 216, 214, 0.2);
+    padding: 0 48px;
+}
+
+.nav-title{
+    font-family: Prompt;
+    color: rgba(230, 216, 214, 1);
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 520px;
+}
+
+.nav-links > a{
+    color: rgba(230, 216, 214, 1);
+    font-family: 'Hepta Slab';
+    font-size: 28px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+main{
+    margin: 0 48px;
+}
+
+#hero-section{
+    margin-top: 48px;
+    padding: 72px 0;
+}
+
+.hero-text{
+    margin-bottom: 48px;
+    text-align: center;
+    font-family: 'Hepta Slab';
+    font-size: 120px;
+    font-weight: 500;
+    color: rgba(230, 216, 214, 1);
+    line-height: 120px;
+}
+
+.hero-img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+#projects-section{
+    padding: 48px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 48px;
+    row-gap: 48px;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-cover{
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.project-title{
+    font-family: 'Fira Sans';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(230, 216, 214, 1);
+}
+
+.project-type{
+    font-family: 'Fira Sans';
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(230, 216, 214, 0.62);
+}
+
+#about-me{
+    color: rgba(230, 216, 214, 1);
+    max-width: 900px;
+    font-family: 'Hepta Slab';
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 52px;
+    text-align: center;
+    margin: 72px auto 120px auto;
+}
+
+.project-highlights{
+    width: 100%;
+    margin: 0 auto 124px auto;
+}
+
+.project-highlights caption{
+    margin-bottom: 24px;
+    text-align: left;
+    font-family: 'Hepta Slab';
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32px;
+    color: rgba(230, 216, 214, 1);
+}
+
+.project-highlights th{
+    font-family: 'Fira Sans';
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: rgba(230, 216, 214, 1);
+}
+
+.project-highlights td{
+    font-family: 'Fira Sans';
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: rgba(230, 216, 214, 0.62);
+}
+
+#impact{
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 0;
+}
+
+.impact-title{
+    font-family: 'Hepta Slab';
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: left;
+    color: rgba(230, 216, 214, 1);
+}
+
+.metrics{
+    width: 648px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 48px;
+}
+
+.metric{
+    padding: 24px 0 48px 0;
+    border-top: 1.5px solid rgba(182, 160, 145, 0.2)
+}
+
+.metric-count{
+    margin-bottom: 8px;
+    font-family: 'Hepta Slab';
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 52px;
+    text-align: left;
+    color: rgba(230, 216, 214, 1);
+}
+
+.metric-name{
+    font-family: 'Fira Sans';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(230, 216, 214, 1);
+}
+
+#testimonials{
+    padding: 48px 0;
+    box-shadow: -120px 0 80px rgb(45, 39, 38) inset;
+}
+
+#testimonials > p{
+    margin-bottom: 48px;
+    font-family: Hepta Slab;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 52px;
+    text-align: center;
+    color: rgba(230, 216, 214, 1);
+}
+
+.reviews{
+    overflow: scroll;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,288px);
+    column-gap: 24px;
+}
+
+.review{
+    height: fit-content;
+    padding: 24px;
+    border-radius: 16px;
+    border: 1.5px solid rgba(230, 216, 214, 0.2);
+    background-color: rgba(79,74,73,255);
+}
+
+.review-header{
+    margin-bottom: 16px;
+    display: flex;
+    background-color: rgba(79,74,73,255);
+}
+
+.client-img{
+    margin: auto 12px auto 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgba(79,74,73,255);
+}
+
+.client-details{
+    margin: auto 0;
+    background-color: rgba(79,74,73,255);
+}
+
+.client-name{
+    background-color: rgba(79,74,73,255);
+    font-family: Fira Sans;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    color: rgba(230, 216, 214, 1);
+}
+
+.client-designation{
+    background-color: rgba(79,74,73,255);
+    font-family: Fira Sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: rgba(230, 216, 214, 0.62);
+}
+
+.review-content{
+    margin-left: 24px;
+    padding-left: 36px;
+    border-left: 1.5px solid rgba(182, 160, 145, 0.2);
+    background-color: rgba(79,74,73,255);
+    font-family: Fira Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(230, 216, 214, 1);
+}
+
+footer{
+    padding: 120px 48px 32px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1.5px solid rgba(230, 216, 214, 0.2);
+}
+
+.copyright{
+    font-family: Hepta Slab;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: left;
+    color: rgba(230, 216, 214, 0.62);
+}
+
+#contact{
+    padding: 12px 24px;
+    border: 1.5px solid rgba(182, 160, 145, 0.2);
+    border-radius: 8px;
+    font-family: Fira Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: rgba(230, 216, 214, 1);
+}
+@media screen and (max-width:1024px) and (min-width:769px){
+    .nav-links{
+        width: 420px;
+        justify-content: end;
+        gap: 20px;
+    }
+    .nav-links>a{
+        font-size: 1.4rem;
+    }
+    .hero-text{
+        font-size: 4.5em;
+        line-height: 100px;
+    }
+    #projects-section{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #projects-section div:last-child{
+        grid-column: span 2;
+    }
+    #about-me{
+        font-size: 2.5em;
+    }
+}
+@media screen and (max-width:768px) and (min-width:412px){
+    .navbar{
+        flex-direction: column;
+        height: fit-content;
+        padding-bottom: 10px;
+    }
+    .nav-title{
+        font-size: 2.2rem;
+    }
+    .nav-links{
+        border: 1px solid rgb(54, 49, 48);
+        border-radius: 20px;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 15px;
+    }
+    .nav-links>a{
+        font-size: 1.2rem;
+    }
+    main{
+        margin: 0 24px;
+    }
+    .hero-text{
+        font-size: 3em;
+        line-height: 70px;
+        margin-bottom: 30px;
+    }
+    #hero-section{
+        margin: 15px 0px;
+        padding: 20px 0;
+    }
+    #projects-section{
+        grid-template-columns: repeat(2,1fr);
+        gap: 28px;
+        padding: 20px 0;
+    }
+    #projects-section div:last-child{
+        grid-column: span 2;
+    }
+    #about-me{
+        margin: 50px auto;
+        font-size: 1.6em;
+        line-height: 36px;
+    }
+    .project-highlights{
+        margin: 40px 0;
+        border: 1px solid rgba(79,74,73,255);
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .project-highlights caption{
+        font-size: 1.4em;
+    }
+    #impact{
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .impact-title{
+        margin: 20px;
+        font-size: 1.4em;
+        text-align: center;
+    }
+    .metrics{
+        width: 100%;
+        gap: 20px;
+    }
+    #testimonials{
+        padding: 30px 0;
+    }
+    #testimonials>p{
+        font-size: 1.6em;
+    }
+    footer{
+        padding: 30px 30px;
+    }
+    .copyright{
+        font-size: 1em;
+    }
+    #contact{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width:411px){
+    .navbar{
+        flex-direction: column;
+        height: fit-content;
+        padding: 10px 30px;
+    }
+    .nav-title{
+        font-size: 1.8rem;
+    }
+    .nav-links{
+        border: 1px solid rgb(54, 49, 48);
+        border-radius: 20px;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+    .nav-links>a{
+        font-size: .8rem;
+    }
+    main{
+        margin: 0 16px;
+    }
+    .hero-text{
+        font-size: 1.8em;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    #hero-section{
+        margin: 10px 0px;
+        padding: 10px 0;
+    }
+    #projects-section{
+        grid-template-columns: 1fr;
+        gap: 22px;
+        padding: 18px 10px;
+    }
+    .project-title{
+        font-size: 1em;
+    }
+    .project-type{
+        font-size: .8em;
+    }
+    #about-me{
+        margin: 40px auto;
+        font-size: 1em;
+        line-height: 28px;
+    }
+    .project-highlights{
+        margin: 20px 0;
+        border: 1px solid rgba(79,74,73,255);
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .project-highlights caption{
+        font-size: 1em;
+        line-height: 20px;
+    }
+    .project-highlights th,.project-highlights td{
+        font-size: .8em;
+        line-height: 20px;
+    }
+    #impact{
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .impact-title{
+        margin: 20px;
+        font-size: 1em;
+        text-align: center;
+    }
+    .metrics{
+        width: 100%;
+        gap: 10px;
+    }
+    .metric{
+        padding: 20px 0;
+    }
+    .metric-count{
+        font-size: 2em;
+        line-height: 30px;
+    }
+    .metric-name{
+        font-size: .8em;
+        line-height: 30px;
+    }
+    #testimonials{
+        padding: 20px 0;
+    }
+    #testimonials>p{
+        font-size: 1.2em;
+        margin: 20px 0;
+    }
+    footer{
+        padding: 20px 20px;
+    }
+    .copyright{
+        font-size: .8em;
+    }
+    #contact{
+        font-size: .8em;
+    }
+}
