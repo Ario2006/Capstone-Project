@@ -32,6 +32,10 @@
     font-size: 28px;
     font-weight: 500;
     text-decoration: none;
+    transition: text-decoration 1s ease-in;
+}
+.nav-links>a:hover{
+    text-decoration: underline;
 }
 
 main{
@@ -69,11 +73,21 @@ main{
 .project{
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+    transition: all .15s ease-in-out;
+    border-radius: 8px;
+}
+.project:hover{
+    padding: 16px;
+    border: 2px solid white;
+    transform: translate(-10px,-10px);
+    box-shadow: 10px 10px 0 white;
 }
 
 .project-cover{
     width: 100%;
     margin-bottom: 8px;
+    border-radius: 8px;
 }
 
 .project-title{
@@ -202,7 +216,7 @@ main{
     overflow: scroll;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(5,288px);
+    grid-template-columns: repeat(10,280px);
     column-gap: 24px;
 }
 
@@ -292,6 +306,12 @@ footer{
     font-weight: 600;
     line-height: 24px;
     color: rgba(230, 216, 214, 1);
+    transition: all 0.15s ease-in-out;
+}
+#contact:hover{
+    transform: translate(-4px,-4px);
+    box-shadow: 4px 4px 0 white;
+    border: 2px solid white;
 }
 @media screen and (max-width:1024px) and (min-width:769px){
     .nav-links{
